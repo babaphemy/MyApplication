@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="myeverlasting.net.essl">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContactActivity"
+            android:label="Contact Us"
+            android:parentActivityName=".BlogActivity" />
+        <activity
+            android:name=".BlogActivity"
+            android:label="@string/title_activity_blog"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginSignup" />
+        <activity
+            android:name=".Dashboard"
+            android:label="Dashboard"
+            android:parentActivityName=".BlogActivity" />
+        <activity android:name=".ReceiptActivity" />
+        <activity android:name=".Invoice" />
+        <activity
+            android:name=".Products"
+            android:label="Products"
+            android:parentActivityName=".BlogActivity" />
+        <activity
+            android:name=".QuoteActivity"
+            android:label="Request Quote"
+            android:parentActivityName=".Products" />
+        <activity android:name=".Invoices" />
+        <activity android:name=".Tranxs" />
+        <activity android:name=".ReceiptsActivity" />
+        <activity android:name=".Tranx" />
+        <activity
+            android:name=".AblogActivity"
+            android:label="Blog"
+            android:parentActivityName=".BlogActivity" />
+        <activity android:name=".Aproduct"></activity>
+    </application>
+
+</manifest>
